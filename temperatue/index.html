@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperatur Convertor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Temperatur Convertor</h1>
+        <hr style="height: 2px;" color="black">
+        <div class="option">
+            From:
+            <select name="from" id="from">
+                <option value="cel">Celcious</option>
+                <option value="far">Fahrenheit </option>
+                <option value="kel">Kelvin</option>
+            </select>
+            To:
+            <select name="to" id="to">
+                <option value="cel" selected>Celcious</option>
+                <option value="far" selected>Fahrenheit </option>
+                <option value="kel">Kelvin</option>
+            </select>
+            
+        </div>
+        <div class="calculation">
+            <input type="text" placeholder="Enter Temperatur" id="input">
+            <button id="convert">Convert</button>
+        </div>
+        <div class="output"> 
+            <input type="text" readonly placeholder="output" id="result">
+            <button id="clear">Clear</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
